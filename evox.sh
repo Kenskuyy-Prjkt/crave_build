@@ -19,7 +19,7 @@ dirs_to_remove=(
     kernel/xiaomi/munch
     vendor/xiaomi/munch
     vendor/xiaomi/munch-firmware
-    vendor/lineage-prive/keys
+    vendor/evolution-priv/keys
     hardware/xiaomi
     hardware/dolby
     vendor/xiaomi/miuicamera
@@ -38,7 +38,7 @@ git clone https://github.com/Kenskuyy-Prjkt/android_hardware_dolby hardware/dolb
 git clone https://github.com/Kenskuyy-Prjkt/android_vendor_xiaomi_miuicamera -b 16 vendor/xiaomi/miuicamera
 git clone https://github.com/kenaidi01/private-keys -b main vendor/evolution-priv/keys
 
-echo "=== Starting GMS (Pico) build ==="
+echo "=== Starting EvolutionX build ==="
 . build/envsetup.sh
 lunch lineage_munch-bp2a-user
 m evolution
