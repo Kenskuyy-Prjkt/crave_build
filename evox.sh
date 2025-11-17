@@ -23,6 +23,7 @@ dirs_to_remove=(
     hardware/xiaomi
     hardware/dolby
     vendor/xiaomi/miuicamera
+    packages/apps/GameBar
 )
 rm -rf "${dirs_to_remove[@]}"
 
@@ -43,3 +44,4 @@ lunch lineage_munch-bp2a-user
 m evolution
 
 echo "=== All builds completed successfully! ==="
+
