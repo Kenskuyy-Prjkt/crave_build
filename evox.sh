@@ -34,10 +34,16 @@ git clone https://github.com/Kenskuyy-Prjkt/android_hardware_dolby hardware/dolb
 git clone https://github.com/Kenskuyy-Prjkt/android_vendor_xiaomi_miuicamera -b 16 vendor/xiaomi/miuicamera
 git clone https://github.com/kenaidi01/private-keys -b main vendor/evolution-priv/keys
 
+echo "== Set Up Build ENV =="
+export BUILD_USERNAME=kenskuyy 
+export BUILD_HOSTNAME=nobody 
+export TZ="Asia/Jakarta"
+
 echo "=== Starting EvolutionX build ==="
-. build/envsetup.sh
+source build/envsetup.sh
 lunch lineage_munch-bp2a-user
 m evolution
 
 echo "=== All builds completed successfully! ==="
+
 
