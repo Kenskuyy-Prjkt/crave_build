@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /bin/bash
 
 rm -rf .repo/local_manifests
 repo init -u https://github.com/Evolution-X/manifest -b bka --git-lfs
@@ -19,7 +19,7 @@ dirs_to_remove=(
     kernel/xiaomi/munch
     vendor/xiaomi/munch
     vendor/xiaomi/munch-firmware
-    vendor/evolution-priv/keys
+    vendor/lineage-prive/keys
     hardware/xiaomi
     hardware/dolby
     vendor/xiaomi/miuicamera
@@ -38,10 +38,9 @@ git clone https://github.com/Kenskuyy-Prjkt/android_hardware_dolby hardware/dolb
 git clone https://github.com/Kenskuyy-Prjkt/android_vendor_xiaomi_miuicamera -b 16 vendor/xiaomi/miuicamera
 git clone https://github.com/kenaidi01/private-keys -b main vendor/evolution-priv/keys
 
-echo "=== Starting EvolutionX build ==="
+echo "=== Starting GMS (Pico) build ==="
 . build/envsetup.sh
 lunch lineage_munch-bp2a-user
 m evolution
 
 echo "=== All builds completed successfully! ==="
-
