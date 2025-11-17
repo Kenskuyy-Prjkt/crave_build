@@ -5,11 +5,7 @@ repo init -u https://github.com/Evolution-X/manifest -b bka --git-lfs
 rm -rf prebuilts/clang/host/linux-x86
 
 echo "==> Syncing sources..."
-if [ -f /opt/crave/resync.sh ]; then
-    /opt/crave/resync.sh
-else
-    repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all)
-fi
+/opt/crave/resync.sh
 
 
 echo "==> Cleaning old outputs and device/vendor/hardware trees..."
@@ -44,3 +40,4 @@ lunch lineage_munch-bp2a-user
 m evolution
 
 echo "=== All builds completed successfully! ==="
+
