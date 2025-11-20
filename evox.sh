@@ -4,7 +4,7 @@ rm -rf .repo/local_manifests/ prebuilts/clang/host/linux-x86
 repo init -u https://github.com/Evolution-X/manifest -b bka --git-lfs
 
 # clone local manifests
-git clone https://github.com/Kenskuyy-Prjkt/local_manifest.git -b evox .repo/local_manifests
+git clone https://github.com/Kenskuyy-Prjkt/local_manifests.git -b evox .repo/local_manifests
 
 # repo sync
 [ -f /usr/bin/resync ] && /usr/bin/resync || /opt/crave/resync.sh
@@ -19,3 +19,4 @@ source build/envsetup.sh
 lunch lineage_munch-bp2a-user
 # cleanup #3
 m evolution
+
